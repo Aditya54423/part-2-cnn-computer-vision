@@ -5,7 +5,7 @@
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange?logo=tensorflow) 
 ![Keras](https://img.shields.io/badge/Keras-API-red?logo=keras)
 
-# ** Project Overview**
+# **Project Overview**
 This project formulates a computer vision solution to automate the detection of vehicle surface defects. A custom Convolutional Neural Network (CNN) is built from scratch using TensorFlow/Keras to learn visual patterns associated with different types of damage.
 
 # **Task 1: Problem Identification**
@@ -13,7 +13,7 @@ Selected Problem Type: Multi-Class Image Classification
 
 Reasoning: The dataset consists of images where each image features a single, dominant vehicle surface condition. There are four mutually exclusive categories (normal, scratch, dent, stain). Since the objective is to assign exactly one label to the entire image rather than locating the defects with bounding boxes or pixel masks, image classification is the correct and most efficient approach.
 
-# ** Task 2: Dataset Exploration**
+# **Task 2: Dataset Exploration**
 Number of Classes: 4 (normal, scratch, dent, stain)
 
 Total Images: 480 images
@@ -61,7 +61,7 @@ Test Loss: ~1.40
 
 Observation: The model currently outputs a majority-class prediction strategy (which equates to 25% accuracy on a perfectly balanced 4-class dataset). In a future iteration, utilizing Transfer Learning (e.g., MobileNetV2 or ResNet) would drastically improve performance on a dataset of this size.
 
-# ** Task 6: CNN Concept Explanation**
+# **Task 6: CNN Concept Explanation**
 ## What is convolution?
 Convolution is a mathematical operation where a small, learnable filter (like a magnifying glass) slides across an image. As it slides, it multiplies its weights against the image's pixels. This process creates a "feature map" that detects specific visual patterns like straight edges, curves, or color shifts.
 
